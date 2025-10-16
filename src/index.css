@@ -40,7 +40,7 @@ All colors MUST be HSL.
 
     --news-dark-bg: 40 10% 92%;
     --news-darker-bg: 40 10% 88%;
-    --news-border: 30 80% 50%;
+    --news-border: 0 0% 0%;
     --news-text: 40 10% 15%;
     --news-text-dim: 40 5% 40%;
     --news-badge: 40 15% 85%;
