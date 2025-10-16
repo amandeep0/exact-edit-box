@@ -38,20 +38,20 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    --news-dark-bg: 0 0% 10%;
+    --news-darker-bg: 0 0% 8%;
+    --news-border: 142 35% 45%;
+    --news-text: 0 0% 85%;
+    --news-text-dim: 0 0% 65%;
+    --news-badge: 0 0% 15%;
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -101,5 +101,10 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: local('JetBrains Mono'), local('Courier New'), monospace;
   }
 }
