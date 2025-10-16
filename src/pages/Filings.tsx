@@ -105,11 +105,11 @@ const Filings = () => {
         </div>
 
         {/* Filings Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filingCategories.map((category) => (
-            <div key={category.type} className="border-2 border-black rounded-lg overflow-hidden bg-white">
+            <div key={category.type} className="border-2 border-black rounded-lg overflow-hidden bg-gray-50 aspect-square flex flex-col">
               {/* Category Header */}
-              <div className="bg-black text-white p-3 flex justify-between items-center">
+              <div className="bg-black text-white p-3 flex justify-between items-center shrink-0">
                 <span className="font-bold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                   {category.type}
                 </span>
@@ -119,20 +119,20 @@ const Filings = () => {
               </div>
 
               {/* Filings List */}
-              <div className="bg-white">
+              <div className="bg-white flex-1 overflow-y-auto">
                 {category.filings.map((filing, idx) => (
                   <div
                     key={idx}
-                    className="p-3 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors cursor-pointer"
+                    className="p-2.5 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors cursor-pointer"
                   >
-                    <div className="flex justify-between items-center gap-4">
-                      <div className="flex items-center gap-2 flex-1">
-                        <FileText className="w-4 h-4 text-gray-400" />
-                        <span className="text-sm text-gray-900" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                    <div className="flex flex-col gap-2">
+                      <div className="flex items-start gap-2">
+                        <FileText className="w-3.5 h-3.5 text-gray-400 mt-0.5 shrink-0" />
+                        <span className="text-xs text-gray-900 leading-tight" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                           {filing.name}
                         </span>
                       </div>
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center justify-between pl-5">
                         <div className="flex items-center gap-1">
                           <Calendar className="w-3 h-3 text-gray-400" />
                           <span className="text-xs text-gray-500" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
