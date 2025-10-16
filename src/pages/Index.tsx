@@ -2,7 +2,7 @@ import { NewsCard } from "@/components/NewsCard";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-[#2a2a2a]">
+    <div className="relative min-h-screen bg-[#e8e8e8]">
       <NewsCard />
     </div>
   );
