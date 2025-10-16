@@ -131,52 +131,89 @@ export const NewsCard = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl font-normal leading-tight tracking-wide">
-              Inside the race to be India's top smartphone in 2025 [Mint (New Delhi)]
+            <h1 className="text-3xl font-bold leading-tight tracking-wide">
+              📰 Daily Trump News Summary - October 15, 2025
             </h1>
 
-            {/* Stock Tags */}
-            <div className="flex gap-2 flex-wrap">
-              <Badge className="bg-[hsl(var(--news-badge))] text-[hsl(var(--news-text))] border border-[hsl(var(--news-border))] text-xs font-mono px-2 py-1 hover:bg-[hsl(var(--news-badge))]">
-                AAPL
-              </Badge>
-              <Badge className="bg-[hsl(var(--news-badge))] text-[hsl(var(--news-text))] border border-[hsl(var(--news-border))] text-xs font-mono px-2 py-1 hover:bg-[hsl(var(--news-badge))]">
-                005930
-              </Badge>
-              <Badge className="bg-[hsl(var(--news-badge))] text-[hsl(var(--news-text))] border border-[hsl(var(--news-border))] text-xs font-mono px-2 py-1 hover:bg-[hsl(var(--news-badge))]">
-                SSNHZ
-              </Badge>
-              <Badge className="bg-[hsl(var(--news-badge))] text-[hsl(var(--news-text))] border border-[hsl(var(--news-border))] text-xs font-mono px-2 py-1 hover:bg-[hsl(var(--news-badge))]">
-                MVRS
-              </Badge>
-              <Badge className="bg-[hsl(var(--news-badge))] text-[hsl(var(--news-text))] border border-[hsl(var(--news-border))] text-xs font-mono px-2 py-1 hover:bg-[hsl(var(--news-badge))]">
-                META
-              </Badge>
-            </div>
-
-            {/* Source and Date */}
-            <div className="text-sm text-[hsl(var(--news-text-dim))] font-mono">
-              Source: Mint (New Delhi) | Publication Date: 10/15/2025 11:40:10 PM
-            </div>
-
             {/* Article Content */}
-            <div className="text-sm leading-relaxed text-[hsl(var(--news-text-dim))] font-mono space-y-4">
+            <div className="text-sm leading-relaxed text-[hsl(var(--news-text))] font-mono space-y-4 mt-6">
+              <p className="font-bold">Summary of Trump-related news:</p>
+              
               <p>
-                However, 2025's top flagship smartphone lineup in India- Apple's iPhone 17 Pro Max, 
-                Samsung's Galaxy S25 Ultra and Google's Pixel 10 Pro XL-have each offering take distinct 
-                approaches to what they have on offer. Prices of the Apple iPhone 17 Pro Max starts at Rs.1.5 
-                lakh, going all the way up to Rs.2.3 lakh for a 2 TB storage variant. Samsung's Galaxy S25 
-                is priced between...
+                Here are the latest headlines concerning President Donald Trump as of October 16, 2025:
               </p>
 
-              <div className="border-t border-[hsl(var(--news-border))] pt-4">
-                <p>
-                  Inside the race to be India's top smartphone in 2025 [Mint (New Delhi)] HT Media
-                  New Delhi, Oct. 16 -- NThe battle for the most premium smartphone that you can buy today 
-                  leads us to three distinct devices in particular-none of which are a surprise. However, 
-                  2025's top flagship smartphone lineup in India-Apple's iPhone 17 Pro Max, Samsung's Galaxy 
-                  S25 Ultra and Google's Pixel 10 Pro XL-have each offering take distinct approaches to what 
-                  they have on offer. Which, then, should you spend on?
+              <div className="space-y-4">
+                <div>
+                  <p className="font-bold">Military Actions:</p>
+                  <ul className="list-disc pl-6 space-y-2 mt-2">
+                    <li>
+                      <span className="font-bold">U.S. Strike on Alleged Drug Boat:</span> President Trump confirmed a U.S. military airstrike on a vessel near Venezuela, resulting in six fatalities. The operation targeted a boat suspected of drug trafficking and links to narcoterrorist organizations. This marks the fifth such strike since early September, with a total of 27 individuals killed. Legal experts have raised concerns about the justification of these strikes under U.S. and international law. (<a href="https://time.com/7325748/trump-strikes-narcotic-vessel-venezuela/?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">time.com</a>)
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="font-bold">Legal Developments:</p>
+                  <ul className="list-disc pl-6 space-y-2 mt-2">
+                    <li>
+                      <span className="font-bold">New York Attorney General Indicted:</span> Letitia James, New York's Attorney General, has been indicted on a single count of mortgage fraud related to a home purchase form. She denies any wrongdoing, attributing the issue to a clerical error. Critics view the indictment as potential political retaliation by the Trump administration, especially given James's previous legal actions against Trump and his businesses. (<a href="https://apnews.com/article/68eb74bdbe483f0eed22b6e3165cc7f1?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">apnews.com</a>)
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="font-bold">Health Update:</p>
+                  <ul className="list-disc pl-6 space-y-2 mt-2">
+                    <li>
+                      <span className="font-bold">President's Health Evaluation:</span> Following a medical evaluation at Walter Reed National Military Medical Center, President Trump has been declared in "exceptional health." His physician reported strong cardiovascular, pulmonary, neurological, and physical performance. The evaluation included preventive health screenings and immunizations in preparation for upcoming international travel. (<a href="https://www.reuters.com/world/us/trump-remains-exceptional-health-doctor-says-2025-10-11/?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">reuters.com</a>)
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="font-bold">Middle East Policy:</p>
+                  <ul className="list-disc pl-6 space-y-2 mt-2">
+                    <li>
+                      <span className="font-bold">Gaza Conflict Status:</span> President Trump announced that the war in Gaza has concluded, stating, "The war is over, you understand that." This declaration indicates a significant development in the ongoing conflict between Israel and Gaza, suggesting an end to hostilities. (<a href="https://www.reuters.com/world/middle-east/trump-gaza-war-is-over-2025-10-12/?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">reuters.com</a>)
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="font-bold">Government Operations:</p>
+                  <ul className="list-disc pl-6 space-y-2 mt-2">
+                    <li>
+                      <span className="font-bold">Federal Worker Layoffs Blocked:</span> A federal judge in San Francisco has temporarily blocked the Trump administration from continuing layoffs of federal workers during the ongoing government shutdown. The layoffs were part of a plan to reduce government size and increase pressure on Democratic lawmakers. The shutdown has already delayed critical announcements, such as the Social Security cost-of-living adjustment. (<a href="https://apnews.com/article/3a4747a492e22cd41c4b4547145bf54d?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">apnews.com</a>)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="border-t border-[hsl(var(--news-border))] pt-4 mt-6">
+                <p className="font-bold text-base mb-3">Recent News on President Donald Trump:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>
+                    <a href="https://time.com/7325748/trump-strikes-narcotic-vessel-venezuela/?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">
+                      Trump Confirms Latest U.S. Strike on Alleged Drug Boat off Venezuela, Killing Six
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.reuters.com/world/us/trump-remains-exceptional-health-doctor-says-2025-10-11/?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">
+                      Trump remains in 'exceptional health,' doctor says
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.reuters.com/world/middle-east/trump-gaza-war-is-over-2025-10-12/?utm_source=openai" className="text-[hsl(var(--news-border))] hover:underline" target="_blank" rel="noopener noreferrer">
+                      Trump on Gaza: war is over
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="border-t border-[hsl(var(--news-border))] pt-4 mt-6">
+                <p className="text-[hsl(var(--news-text-dim))] italic text-xs">
+                  Last updated: 2025-10-15 20:45:43 EST
                 </p>
               </div>
             </div>
