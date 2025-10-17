@@ -38,12 +38,12 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --news-dark-bg: 40 10% 92%;
-    --news-darker-bg: 40 10% 88%;
+    --news-dark-bg: 0 0% 100%;
+    --news-darker-bg: 0 0% 97%;
     --news-border: 0 0% 0%;
-    --news-text: 40 10% 15%;
-    --news-text-dim: 40 5% 40%;
-    --news-badge: 40 15% 85%;
+    --news-text: 0 0% 10%;
+    --news-text-dim: 0 0% 40%;
+    --news-badge: 0 0% 95%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
