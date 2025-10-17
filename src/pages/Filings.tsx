@@ -107,7 +107,7 @@ const Filings = () => {
         {/* Filings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filingCategories.map((category) => (
-            <div key={category.type} className="border-2 border-black rounded-lg overflow-hidden bg-gray-50 aspect-square flex flex-col">
+            <div key={category.type} className="border-2 border-black overflow-hidden bg-gray-50 aspect-square flex flex-col">
               {/* Category Header */}
               <div className="bg-black text-white p-3 flex justify-between items-center shrink-0">
                 <span className="font-bold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
