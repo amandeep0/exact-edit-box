@@ -63,11 +63,11 @@ const Filings = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[hsl(var(--news-dark-bg))] p-8">
+    <div className="min-h-screen bg-[hsl(var(--news-dark-bg))] p-8 font-mono">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-8 flex items-center gap-3 text-[hsl(var(--news-text))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+          <h1 className="text-3xl font-bold mb-8 flex items-center gap-3 text-[hsl(var(--news-text))]">
             <FileText className="w-8 h-8" />
             Filings and Transcripts
           </h1>
@@ -78,27 +78,26 @@ const Filings = () => {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[hsl(var(--news-text-dim))]" />
               <Input
                 placeholder="Search company by ticker (e.g. AAPL)"
-                className="pl-10 border-2 border-[hsl(var(--news-border))] bg-transparent font-mono text-[hsl(var(--news-text))] placeholder:text-[hsl(var(--news-text-dim))]"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                className="pl-10 h-9 border-2 border-[hsl(var(--news-border))] bg-transparent rounded-sm text-[hsl(var(--news-text))] placeholder:text-[hsl(var(--news-text-dim))]"
               />
             </div>
 
             {/* Company Badge */}
-            <div className="flex items-center gap-2 px-4 py-2 bg-[hsl(var(--news-badge))] border-2 border-[hsl(var(--news-border))]">
-              <div className="w-6 h-6 rounded bg-[hsl(var(--news-darker-bg))] flex items-center justify-center">
-                <span className="text-white text-sm">🍎</span>
+            <div className="flex items-center gap-2 px-4 py-2 bg-[hsl(var(--news-badge))] border-2 border-[hsl(var(--news-border))] rounded-sm">
+              <div className="w-6 h-6 rounded-sm bg-[hsl(var(--news-darker-bg))] flex items-center justify-center">
+                <span className="text-sm">🍎</span>
               </div>
-              <span className="font-bold text-[hsl(var(--news-text))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              <span className="font-bold text-[hsl(var(--news-text))]">
                 AAPL
               </span>
             </div>
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-2 text-[hsl(var(--news-text))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            <h2 className="text-2xl font-bold mb-2 text-[hsl(var(--news-text))]">
               AAPL filings & transcripts
             </h2>
-            <p className="text-sm text-[hsl(var(--news-text-dim))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            <p className="text-sm text-[hsl(var(--news-text-dim))]">
               Direct links to recent SEC filings and earnings transcripts grouped by form.
             </p>
           </div>
@@ -107,13 +106,13 @@ const Filings = () => {
         {/* Filings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filingCategories.map((category) => (
-            <div key={category.type} className="border-2 border-[hsl(var(--news-border))] overflow-hidden bg-[hsl(var(--news-dark-bg))] aspect-square flex flex-col">
+            <div key={category.type} className="border-2 border-[hsl(var(--news-border))] rounded-sm overflow-hidden bg-[hsl(var(--news-dark-bg))] aspect-square flex flex-col shadow-sm">
               {/* Category Header */}
-              <div className="bg-[hsl(var(--news-darker-bg))] text-[hsl(var(--news-text))] p-3 border-b border-[hsl(var(--news-border))] flex justify-between items-center shrink-0">
-                <span className="font-bold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              <div className="bg-[hsl(var(--news-darker-bg))] text-[hsl(var(--news-text))] p-3 border-b-2 border-[hsl(var(--news-border))] flex justify-between items-center shrink-0">
+                <span className="font-bold">
                   {category.type}
                 </span>
-                <span className="text-sm" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                <span className="text-sm">
                   {category.count}
                 </span>
               </div>
@@ -128,18 +127,18 @@ const Filings = () => {
                     <div className="flex flex-col gap-2">
                       <div className="flex items-start gap-2">
                         <FileText className="w-3.5 h-3.5 text-[hsl(var(--news-text-dim))] mt-0.5 shrink-0" />
-                        <span className="text-xs text-[hsl(var(--news-text))] leading-tight" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                        <span className="text-xs text-[hsl(var(--news-text))] leading-tight">
                           {filing.name}
                         </span>
                       </div>
                       <div className="flex items-center justify-between pl-5">
                         <div className="flex items-center gap-1">
                           <Calendar className="w-3 h-3 text-[hsl(var(--news-text-dim))]" />
-                          <span className="text-xs text-[hsl(var(--news-text-dim))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                          <span className="text-xs text-[hsl(var(--news-text-dim))]">
                             {filing.date}
                           </span>
                         </div>
-                        <button className="flex items-center gap-1 text-xs text-[hsl(var(--news-border))] hover:underline" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                        <button className="flex items-center gap-1 text-xs text-[hsl(var(--news-border))] hover:underline">
                           <ArrowUpRight className="w-3 h-3" />
                           View
                         </button>
