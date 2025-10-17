@@ -63,11 +63,11 @@ const Filings = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white p-8">
+    <div className="min-h-screen bg-[hsl(var(--news-dark-bg))] p-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-8 flex items-center gap-3 text-gray-900" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+          <h1 className="text-3xl font-bold mb-8 flex items-center gap-3 text-[hsl(var(--news-text))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
             <FileText className="w-8 h-8" />
             Filings and Transcripts
           </h1>
@@ -75,30 +75,30 @@ const Filings = () => {
           <div className="flex items-center gap-4 mb-8">
             {/* Search Bar */}
             <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[hsl(var(--news-text-dim))]" />
               <Input
                 placeholder="Search company by ticker (e.g. AAPL)"
-                className="pl-10 border-2 border-gray-200 bg-gray-50 font-mono text-gray-900 placeholder:text-gray-400"
+                className="pl-10 border-2 border-[hsl(var(--news-border))] bg-transparent font-mono text-[hsl(var(--news-text))] placeholder:text-[hsl(var(--news-text-dim))]"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               />
             </div>
 
             {/* Company Badge */}
-            <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 border-2 border-gray-200 rounded-lg">
-              <div className="w-6 h-6 rounded bg-black flex items-center justify-center">
+            <div className="flex items-center gap-2 px-4 py-2 bg-[hsl(var(--news-badge))] border-2 border-[hsl(var(--news-border))]">
+              <div className="w-6 h-6 rounded bg-[hsl(var(--news-darker-bg))] flex items-center justify-center">
                 <span className="text-white text-sm">🍎</span>
               </div>
-              <span className="font-bold text-gray-500" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              <span className="font-bold text-[hsl(var(--news-text))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                 AAPL
               </span>
             </div>
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-2 text-gray-900" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            <h2 className="text-2xl font-bold mb-2 text-[hsl(var(--news-text))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
               AAPL filings & transcripts
             </h2>
-            <p className="text-sm text-gray-500" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            <p className="text-sm text-[hsl(var(--news-text-dim))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
               Direct links to recent SEC filings and earnings transcripts grouped by form.
             </p>
           </div>
@@ -107,9 +107,9 @@ const Filings = () => {
         {/* Filings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filingCategories.map((category) => (
-            <div key={category.type} className="border-2 border-black overflow-hidden bg-gray-50 aspect-square flex flex-col">
+            <div key={category.type} className="border-2 border-[hsl(var(--news-border))] overflow-hidden bg-[hsl(var(--news-dark-bg))] aspect-square flex flex-col">
               {/* Category Header */}
-              <div className="bg-black text-white p-3 flex justify-between items-center shrink-0">
+              <div className="bg-[hsl(var(--news-darker-bg))] text-[hsl(var(--news-text))] p-3 border-b border-[hsl(var(--news-border))] flex justify-between items-center shrink-0">
                 <span className="font-bold" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                   {category.type}
                 </span>
@@ -119,27 +119,27 @@ const Filings = () => {
               </div>
 
               {/* Filings List */}
-              <div className="bg-white flex-1 overflow-y-auto">
+              <div className="bg-[hsl(var(--news-dark-bg))] flex-1 overflow-y-auto">
                 {category.filings.map((filing, idx) => (
                   <div
                     key={idx}
-                    className="p-2.5 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors cursor-pointer"
+                    className="p-2.5 border-b border-[hsl(var(--news-border))] last:border-b-0 hover:bg-[hsl(var(--news-badge))] transition-colors cursor-pointer"
                   >
                     <div className="flex flex-col gap-2">
                       <div className="flex items-start gap-2">
-                        <FileText className="w-3.5 h-3.5 text-gray-400 mt-0.5 shrink-0" />
-                        <span className="text-xs text-gray-900 leading-tight" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                        <FileText className="w-3.5 h-3.5 text-[hsl(var(--news-text-dim))] mt-0.5 shrink-0" />
+                        <span className="text-xs text-[hsl(var(--news-text))] leading-tight" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                           {filing.name}
                         </span>
                       </div>
                       <div className="flex items-center justify-between pl-5">
                         <div className="flex items-center gap-1">
-                          <Calendar className="w-3 h-3 text-gray-400" />
-                          <span className="text-xs text-gray-500" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                          <Calendar className="w-3 h-3 text-[hsl(var(--news-text-dim))]" />
+                          <span className="text-xs text-[hsl(var(--news-text-dim))]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                             {filing.date}
                           </span>
                         </div>
-                        <button className="flex items-center gap-1 text-xs text-gray-900 hover:underline" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                        <button className="flex items-center gap-1 text-xs text-[hsl(var(--news-border))] hover:underline" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
                           <ArrowUpRight className="w-3 h-3" />
                           View
                         </button>
